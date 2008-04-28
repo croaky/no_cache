@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/plugins/!svn/ver/474/no_cache/test
+END
+no_cache_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/plugins/!svn/ver/474/no_cache/test/no_cache_test.rb
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/plugins/!svn/ver/475/no_cache/test/test_helper.rb
+END

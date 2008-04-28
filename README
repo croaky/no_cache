@@ -1,0 +1,31 @@
+no_cache
+========
+
+This was extracted from a problem we had while building
+a RESTful wizard without breaking the back button
+
+http://giantrobots.thoughtbot.com/2008/4/25/pitfalls-in-restful-wizards
+
+The no_cache plugin will force the browser to fetch a page
+every time, including on clicks to the 'back' and 'forward'
+buttons.
+
+USAGE
+=====
+
+class PurchasesController < ApplicationController
+  no_cache [:new, :edit]
+end
+
+class TeamsController < ApplicationController
+  no_cache [:new]
+end
+
+# app/views/purchases/new, 
+# app/views/purchases/edit, and 
+# app/views/teams/new
+
+<%= hidden_iframe %>
+
+Copyright (c) 2008 Chad Pytel, Dan Croak, and thoughtbot, inc.
+Released under the MIT license
