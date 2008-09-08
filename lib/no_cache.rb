@@ -24,7 +24,7 @@ module Thoughtbot
     module InstanceMethods # :nodoc:
       def dont_cache
         response.headers["Last-Modified"] = Time.now.httpdate
-        response.headers["Expires"] = 0
+        response.headers["Expires"] = '0'
         response.headers["Pragma"] = "no-cache"
         response.headers["Cache-Control"] = 'no-store, no-cache, must-revalidate, max-age=0, pre-check=0, post-check=0'
       end
